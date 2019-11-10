@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sly-fox</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-container" data-component="top-container">
+    <span class="position" data-component="position"></span>
+    <div class="name-container">
+      <span class="first-name" data-component="first-name"></span>
+      <span class="middle-name" data-component="middle-name"></span>
+    </div>
+  </div>
+
+
+
+  <div class="options-container">
+    <div class="prev-next-container">
+      <button class="prev" data-component="prev">prev</button>
+      <button class="next" data-component="next">next</button>
+
+      <form action="#" class="form-pos">
+        <input type="text" class="input" data-component="input">
+        <button class="pos" data-component="pos">position</button>
+        <span class="go-to-describe">GO TO POSITION</span>
+      </form>
+
+    </div>
+
+    <div class="container-input-page">
+      <input type="text" class="current-email">
+      <input type="text" class="page" data-component="page">
+      <span class="page-describe">PAGE</span>
+    </div>
+    <div class="pdf-container">
+      <span class="arrow-count-left hidden"><</span>
+      <span class="sended-count">0</span>
+      <div class="sended-count-email-container">
+        <form action="#" class="form-sended-count-email">
+          <input type="text" class="sended-count-email-input hidden">
+          <button class="sended-count-email-button"></button>
+        </form>
+        <span class="sended-count-email">60</span>
+      </div>
+      <span class="arrow-count-right hidden">></span>
+      <input type="checkbox" class="checkbox">
+      <span class="pdf">NOT CREATE PDF</span></br>
+    </div>
+    <div class="add-comment-container">
+      <input type="checkbox" class="checkbox-add-comment checkbox">
+      <span class="add-comment-describe">ADD COMMENT</span>
+    </div>
+    <div class="not-sended-container">
+      <div class="is-connect"></div>
+      <div class="is-change-pos"></div>
+      <div class="is-end-mailing"></div>
+      <button class="not-sended-button" data-component="not-sended-button">not sended</button>
+      <button class="send-not-sended-button" data-component="send-not-sended-button">send not sended</button>
+    </div>
+  </div>
+
+  <div type="text" class="text" data-component="text"></div>
+
+  <div class="all-email"></div>
+
+  <div class="not-sended-content hidden">
+    <button class="not-sended-content__remove hidden">Удалить</button>
+    <button class="not-sended-content__send hidden">НЕ ОТПРАВЛЕНО</button></br>
+  </div>
+
+
+  <div class="auto-comment-content">
+    <div class="auto-comment__title-container">
+      <input type="checkbox" class="auto-comment__checkbox">
+      <span class="auto-comment__title">авто комментарий</span>
+    </div>
+    <div class="auto-comment hidden">
+      <span class="auto-comment__id-title">Добавлено в базу:</span>
+      <span class="auto-comment__id"></span></br>
+      <input type="text" class="auto-comment__from">
+      <input type="text" class="auto-comment__to">
+      <button class="auto-comment__start">Старт</button>
+      <button class="auto-comment__stop">Стоп</button>
+      <span class="auto-comment__status"></span></br>
+      <span class="auto-comment__template-title">Шаблон</span>
+      <input type="text" class="auto-comment__template"></br>
+      <span class="auto-comment__hook-title">Hook</span>
+      <input type="text" class="auto-comment__hook">
+
+      <div class="auto-comment-by-email">
+        <span class="auto-comment-by-email__email-title">Email</span>
+        <input type="text" class="auto-comment-by-email__email-input">
+        <button class="auto-comment-by-email__add-button">Добавить коментарий</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

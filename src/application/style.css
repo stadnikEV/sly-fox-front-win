@@ -1,0 +1,504 @@
+html,body{
+/* overflow-y:hidden; */
+font-size: 25px;
+font-family: sans-serif;
+}
+
+.top-container {
+  padding: 15px 0;
+  position: relative;
+}
+.top-container.red {
+  background-color: red;
+}
+
+.top-container.green {
+  background-color: green;
+}
+
+.prev-next-container {
+
+}
+
+.options-container {
+  background-color: rgb(234, 234, 234);
+  padding: 15px;
+}
+
+
+.position {
+  position: absolute;
+  right: 0;
+  /* float: right; */
+  font-size: 40px;
+  color: blue;
+  margin-right: 25px;
+  /* margin-left: 30px; */
+  /* margin-top: 15px; */
+}
+
+.form-pos {
+  float: right;
+  margin-right: 25px;
+}
+
+.go-to-describe {
+  float: right;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 45px;
+  color: blue;
+  margin-top: 15px;
+}
+
+.name-container {
+  height: 46px;
+  white-space: nowrap;
+}
+
+.first-name {
+  vertical-align: bottom;
+  line-height: 46px;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.middle-name {
+  vertical-align: bottom;
+  line-height: 46px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.prev, .next {
+  font-size: 20px;
+  color: rgb(247, 247, 247);
+  margin-left: 25px;
+  margin-top: 15px;
+  height: 50px;
+  width: 100px;
+  background-color: #4646C6;
+  outline: none;
+}
+
+
+
+.next:hover, .prev:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(23, 33, 198);
+}
+
+.sended {
+  background-color: rgb(34, 180, 115);
+}
+
+.pos {
+  font-size: 20px;
+  color: rgb(247, 247, 247);
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 50px;
+  width: 100px;
+  background-color: #4646C6;
+  outline: none;
+  display: none;
+}
+
+.pos:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(23, 33, 198);
+}
+
+.input {
+  float: right;
+  margin-top: 15px;
+  height: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  font-size: 30px;
+  letter-spacing: 6px;
+  color: blue;
+  padding-left: 25px;
+}
+
+.page-describe, .pdf {
+  float: right;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 45px;
+  color: blue;
+}
+
+
+.pdf {
+  margin-right: 45px;
+}
+
+.container-input-page, .pdf-container {
+  margin-top: 15px;
+}
+
+.container-input-page.active, .pdf-container.active {
+  background-color: yellow;
+}
+
+
+
+.container-input-page::after, .pdf-container::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.add-comment-container {
+  height: 50px;
+}
+.checkbox-add-comment {
+  float: right;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+.add-comment-describe {
+  float: right;
+  font-size: 20px;
+  line-height: 50px;
+  margin-right: 45px;
+  color: blue;
+}
+
+.add-comment-describe.green {
+  color: green;
+}
+.add-comment-describe.red {
+  color: red;
+}
+
+
+.container-input-page::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.page {
+  /* margin-top: 15px; */
+  margin-right: 25px;
+  float: right;
+  height: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: blue;
+  padding-left: 10px;
+}
+
+
+.uncurrent-page {
+  background-color: yellow;
+  color: blue;
+}
+
+.current-email {
+  float: left;
+  font-size: 20px;
+  margin-left: 26px;
+  height: 50px;
+  width: 330px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  float: right;
+  margin-top: 19px;
+  margin-right: 70px;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.text {
+  overflow: auto;
+  width: 100%;
+  margin-top: 10px;
+  height: 250px;
+  border-bottom: solid 1px gray;
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.all-email {
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+.sended-count {
+  float: left;
+  color: blue;
+  background-color: rgb(234, 234, 234);
+  line-height: 50px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.sended-count-email-container {
+  display: inline-block;
+  float: left;
+  margin-left: 70px;
+}
+
+.sended-count-email {
+  color: blue;
+  background-color: rgb(234, 234, 234);
+  line-height: 50px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 40px;
+}
+
+.sended-count-email.hidden {
+  display: none;
+}
+
+.sended-count-email-input {
+  height: 45px;
+  width: 100px;
+  box-sizing: border-box;
+  font-size: 30px;
+  letter-spacing: 6px;
+  color: blue;
+}
+
+.sended-count-email-input.hidden {
+  display: none;
+}
+
+.sended-count-email-button {
+  display: none;
+}
+
+.arrow-count-left, .arrow-count-right {
+  float: left;
+  line-height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-count-left {
+  margin-left: 20px
+}
+
+.arrow-count-left.hidden, .arrow-count-right.hidden {
+  visibility: hidden;
+}
+
+
+.is-connect, .is-change-pos, .is-end-mailing {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  float: left;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.is-connect.green {
+  background-color: green;
+}
+.is-change-pos.yellow {
+  background-color: yellow;
+}
+.is-end-mailing.blue {
+  background-color: blue;
+}
+
+.not-sended-container {
+  /* float: right;
+  display: inline-block; */
+}
+
+.not-sended-button {
+  float: right;
+  font-size: 20px;
+  color: rgb(247, 247, 247);
+  margin-right: 25px;
+  margin-top: 15px;
+  height: 40px;
+  width: 140px;
+  background-color: darkgray;
+  outline: none;
+}
+
+.not-sended-button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.send-not-sended-button {
+  float: right;
+  font-size: 20px;
+  color: rgb(247, 247, 247);
+  margin-right: 25px;
+  margin-top: 15px;
+  height: 40px;
+  width: 190px;
+  background-color: #4646C6;
+  outline: none;
+}
+
+.send-not-sended-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(23, 33, 198);
+}
+
+.send-not-sended-button.green {
+  background-color: green;
+}
+
+.send-not-sended-button.red {
+  background-color: red;
+}
+
+.not-sended-container::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+/* not sended content */
+
+.not-sended-content {
+  padding: 20px 10px;
+  border-bottom: solid 1px gray;
+}
+
+.not-sended-content__button-pos {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 50px;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+.not-sended-content__button-pos.active {
+  background-color: #ccc;
+  color: blue;
+}
+
+.not-sended-content__button-pos:hover {
+  cursor: pointer;
+  color: blue;
+  background-color: #ccc;
+}
+
+.not-sended-content__send.red {
+  background-color: red;
+}
+
+
+
+/* auto comment app */
+
+.auto-comment-content {
+  margin-top: 30px;
+}
+
+.auto-comment {
+  background-color: lightgray;
+}
+
+.auto-comment__title,
+.auto-comment__id-title,
+.auto-comment__status,
+.auto-comment__template-title,
+.auto-comment__hook-title,
+.auto-comment__id {
+  font-size: 16px;
+}
+
+.auto-comment__title, .auto-comment__checkbox {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+
+.auto-comment__title-container::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.auto-comment__id-title {
+  margin-right: 20px;
+}
+.auto-comment__id {
+  margin-right: 20px;
+}
+
+.auto-comment__from,
+.auto-comment__to {
+  width: 60px;
+}
+
+.auto-comment__status {
+  color: blue;
+  margin-left: 30px;
+}
+
+.auto-comment__status.red {
+  color: red;
+}
+
+
+.auto-comment {
+  padding: 20px 20px 50px 20px;
+}
+
+.auto-comment__template {
+  width: 300px;
+}
+
+.auto-comment__hook {
+  width: 300px;
+  margin-left: 22px;
+}
+
+
+.auto-comment-by-email {
+  border-top: solid 1px gray;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.auto-comment-by-email__email-title {
+  font-size: 14px;
+}
+.auto-comment-by-email__email-input {
+  width: 200px;
+}
+
+.hidden {
+  display: none;
+}
